@@ -34,8 +34,18 @@
     </button>
   </mat-toolbar>
 
-  <swiper [slidesPerView]="1" [spaceBetween]="50" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()"
-    [navigation]="true" [pagination]="{ clickable: true }" [scrollbar]="{ draggable: true }">
+  <swiper
+    class="swiper"
+    [slidesPerView]="1" 
+    [spaceBetween]="50" 
+    (swiper)="onSwiper($event)" 
+    (slideChange)="onSlideChange()"
+    [navigation]="true" 
+    [pagination]="{ clickable: true }" 
+    [loop]="true"
+    [autoplay]="true"
+    effect="coverflow"
+    >
     <ng-template swiperSlide><img src="https://picsum.photos/1500/500" alt="Girl in a jacket" width="100%"></ng-template>
     <ng-template swiperSlide><img src="https://picsum.photos/1500/501" alt="Girl in a jacket" width="100%"></ng-template>
     <ng-template swiperSlide><img src="https://picsum.photos/1500/502" alt="Girl in a jacket" width="100%"></ng-template>

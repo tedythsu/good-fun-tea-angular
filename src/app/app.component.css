@@ -313,3 +313,9 @@
 .menu {
     font-family: 'Noto Serif TC', serif;
 }
+
+.swiper{
+  --swiper-theme-color: #ffffff;
+  --swiper-navigation-color: #ffffff;
+  --swiper-navigation-size: 30px;
+}
