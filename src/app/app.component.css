@@ -299,7 +299,7 @@
   flex: 1 1 auto;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
 
   /* 小螢幕裝置顯示漢堡選單 */
   button.example-icon,
@@ -308,7 +308,7 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
 
   .toolbarButtons,
   .toolbarLarge {
@@ -357,4 +357,8 @@
   --swiper-theme-color: #ffffff;
   --swiper-navigation-color: #ffffff;
   --swiper-navigation-size: 30px;
+}
+
+.example-sidenav {
+  width: 300px;
 }

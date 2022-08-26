@@ -9,19 +9,27 @@
 
 <div class="container">
 
+  <mat-drawer-container class="example-container" >
 
+    <mat-drawer #drawer class="example-sidenav" mode="over">
+      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+      <button (click)="showFiller = !showFiller" mat-raised-button>
+        Toggle extra text
+      </button>
+    </mat-drawer>
+  
   <!-- Small Toolbar -->
 
   <mat-toolbar class="toolbarSmall">
-    <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon"
+    <button mat-icon-button (click)="drawer.toggle()" class="example-icon"
       aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
-    <mat-menu class="menu" #menu="matMenu">
+    <!-- <mat-menu class="menu" #menu="matMenu">
       <button mat-menu-item>關於我們</button>
       <button mat-menu-item>瀏覽商品</button>
       <button mat-menu-item>聯絡我們</button>
-    </mat-menu>
+    </mat-menu> -->
 
     <div class="toolbarTitle">
         <img class="toolbarLogo" src="./assets/images/logo-removebg-preview.png" alt="Girl in a jacket" width="40"
@@ -117,6 +125,8 @@
     <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-3-2.jpg" alt="Tea" width="100%"></ng-template>
     <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-4-2.jpg" alt="Tea" width="100%"></ng-template>
   </swiper>
+
+</mat-drawer-container>
 
 </div>
 

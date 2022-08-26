@@ -18,10 +18,13 @@ SwiperCore.use([Navigation, Pagination, A11y, Autoplay, EffectFade ]);
   styleUrls: ['./app.component.css'],
 })
 
+
 export class AppComponent {
   title = 'GoodFunTea';
 
   public innerWidth: any;
+
+  showFiller = false;
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
