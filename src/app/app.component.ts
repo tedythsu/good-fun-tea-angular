@@ -25,6 +25,7 @@ export class AppComponent {
   public innerWidth: any;
 
   showFiller = false;
+  panelOpenState = false;
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;

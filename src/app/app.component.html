@@ -9,13 +9,43 @@
 
 <div class="container">
 
-  <mat-drawer-container class="example-container" >
+  <mat-drawer-container class="example-container">
 
-    <mat-drawer #drawer class="example-sidenav" mode="over">
-      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-      <button (click)="showFiller = !showFiller" mat-raised-button>
-        Toggle extra text
-      </button>
+    <mat-drawer #drawer class="example-sidenav" mode="push">
+      
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              關於我們
+            </mat-panel-title>
+            <!-- <mat-panel-description>
+              This is a summary of the content
+            </mat-panel-description> -->
+          </mat-expansion-panel-header>
+            <button mat-button>Basic</button>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              瀏覽商品
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+            <button mat-button>Basic</button>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              聯絡我們
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <button mat-button>Basic</button>
+        </mat-expansion-panel>
+
+      </mat-accordion>
+
     </mat-drawer>
   
   <!-- Small Toolbar -->

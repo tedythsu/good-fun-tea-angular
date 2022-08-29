@@ -11,6 +11,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatCardModule} from '@angular/material/card';
 
 import { SwiperModule } from 'swiper/angular';
 
@@ -28,6 +30,8 @@ import { SwiperModule } from 'swiper/angular';
     MatMenuModule,
     MatGridListModule,
     MatSidenavModule,
+    MatExpansionModule,
+    MatCardModule,
     SwiperModule
   ],
   providers: [],
