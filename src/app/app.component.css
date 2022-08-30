@@ -295,14 +295,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap');
 
-.example-spacer {
+.toolbarSpacer {
   flex: 1 1 auto;
 }
 
 @media screen and (min-width: 992px) {
 
-  /* 小螢幕裝置顯示漢堡選單 */
-  button.example-icon,
+  /* Display menu icon on mobile devices */
+  button.menuIcon,
   .toolbarSmall {
     display: none;
   }
@@ -310,15 +310,19 @@
 
 @media screen and (max-width: 992px) {
 
+  /* Hide menu icon on large screen */
   .toolbarButtons,
   .toolbarLarge {
     display: none;
   }
 }
 
+*:not(.material-icons, .material-symbols-outlined) {
+  font-family: 'Noto Serif TC', serif;
+}
+
 .toolbar {
   position: sticky;
-  /* position: absolute; */
   top: 0;
   left: 0;
   right: 0;
@@ -353,12 +357,35 @@
   font-family: 'Noto Serif TC', serif;
 }
 
+.sidenav {
+  width: auto;
+}
+
 .swiper {
   --swiper-theme-color: #ffffff;
   --swiper-navigation-color: #ffffff;
   --swiper-navigation-size: 30px;
 }
 
-.example-sidenav {
-  width: auto;
+.headingSection {
+  text-align: center;
+  margin: 1em;
+}
+
+.imageHoverEffect {
+  opacity: 0.8;
+  transition: all 0.5s ease;
+}
+
+.imageHoverEffect:hover {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.bestSellersImages {
+  display: flex;
+}
+
+.bestSellersImages {
+  margin: 20px;
 }

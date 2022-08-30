@@ -9,21 +9,18 @@
 
 <div class="container">
 
-  <mat-drawer-container class="example-container">
+  <mat-drawer-container class="drawerContainer">
+    <mat-drawer #drawer class="sidenav" mode="push">
 
-    <mat-drawer #drawer class="example-sidenav" mode="push">
-      
       <mat-accordion>
+
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>
               關於我們
             </mat-panel-title>
-            <!-- <mat-panel-description>
-              This is a summary of the content
-            </mat-panel-description> -->
           </mat-expansion-panel-header>
-            <button mat-button>Basic</button>
+          <button mat-button>Basic</button>
         </mat-expansion-panel>
 
         <mat-expansion-panel>
@@ -32,7 +29,7 @@
               瀏覽商品
             </mat-panel-title>
           </mat-expansion-panel-header>
-            <button mat-button>Basic</button>
+          <button mat-button>Basic</button>
         </mat-expansion-panel>
 
         <mat-expansion-panel>
@@ -47,116 +44,124 @@
       </mat-accordion>
 
     </mat-drawer>
-  
-  <!-- Small Toolbar -->
 
-  <mat-toolbar class="toolbarSmall">
-    <button mat-icon-button (click)="drawer.toggle()" class="example-icon"
-      aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <!-- <mat-menu class="menu" #menu="matMenu">
-      <button mat-menu-item>關於我們</button>
-      <button mat-menu-item>瀏覽商品</button>
-      <button mat-menu-item>聯絡我們</button>
-    </mat-menu> -->
+    <!-- Small Toolbar -->
 
-    <div class="toolbarTitle">
-        <img class="toolbarLogo" src="./assets/images/logo-removebg-preview.png" alt="Girl in a jacket" width="40"
+    <mat-toolbar class="toolbarSmall">
+
+      <button mat-icon-button (click)="drawer.toggle()" class="menuIcon"
+        aria-label="Icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <div class="toolbarTitle">
+        <img class="toolbarLogo" src="./assets/images/logo-removebg-preview.png" alt="Good Fun Tea Logo" width="40"
           height="40">
-      <div>古風茶創</div>
-    </div>
+        <div>古風茶創</div>
+      </div>
 
-    <span class="example-spacer"></span>
+      <span class="toolbarSpacer"></span>
 
-    <button mat-icon-button [matMenuTriggerFor]="member" aria-label="Account icon">
-      <mat-icon>person_outline</mat-icon>
-    </button>
-    <mat-menu class="menu" #member="matMenu">
-      <button mat-menu-item>會員中心</button>
-      <button mat-menu-item>登出</button>
-    </mat-menu>
-    <button mat-icon-button aria-label="Shopping Cart icon">
-      <span class="material-symbols-outlined">
-        shopping_cart
+      <button mat-icon-button [matMenuTriggerFor]="member" aria-label="Account icon">
+        <mat-icon>person_outline</mat-icon>
+      </button>
+      <mat-menu class="menu" #member="matMenu">
+        <button mat-menu-item>會員中心</button>
+        <button mat-menu-item>登出</button>
+      </mat-menu>
+
+      <button mat-icon-button aria-label="Shopping Cart icon">
+        <span class="material-symbols-outlined">
+          shopping_cart
         </span>
-    </button>
+      </button>
 
-  </mat-toolbar>
+    </mat-toolbar>
 
+    <!-- Large Toolbar -->
 
-  <!-- Large Toolbar -->
+    <mat-toolbar class="toolbarLarge">
 
-<mat-toolbar class="toolbarLarge">
-
-  <span class="toolbarTitle">
-    <img class="toolbarLogo" src="./assets/images/logo-removebg-preview.png" alt="Girl in a jacket" width="40"
-      height="40">
-    古風茶創
-  </span>
-
-  <div class="toolbarButtons">
-
-    <button mat-button>關於我們</button>
-
-    <button mat-button [matMenuTriggerFor]="shop">瀏覽商品</button>
-    <mat-menu class="menu" #shop="matMenu">
-      <button mat-menu-item>所有商品</button>
-      <button mat-menu-item>精選</button>
-      <button mat-menu-item>新上市</button>
-      <button mat-menu-item>禮盒</button>
-      <button mat-menu-item>優惠</button>
-    </mat-menu>
-
-    <button mat-button>聯絡我們</button>
-
-  </div>
-
-  <span class="example-spacer"></span>
-
-  <button mat-icon-button [matMenuTriggerFor]="member" aria-label="Account icon">
-    <mat-icon>person_outline</mat-icon>
-  </button>
-  <mat-menu class="menu" #member="matMenu">
-    <button mat-menu-item>會員中心</button>
-    <button mat-menu-item>登出</button>
-  </mat-menu>
-  <button mat-icon-button aria-label="Shopping Cart icon">
-    <span class="material-symbols-outlined">
-      shopping_cart
+      <span class="toolbarTitle">
+        <img class="toolbarLogo" src="./assets/images/logo-removebg-preview.png" alt="Good Fun Tea Logo" width="40"
+          height="40">
+        古風茶創
       </span>
-  </button>
 
-</mat-toolbar>
+      <div class="toolbarButtons">
+
+        <button mat-button>關於我們</button>
+
+        <button mat-button [matMenuTriggerFor]="shop">瀏覽商品</button>
+        <mat-menu class="menu" #shop="matMenu">
+          <button mat-menu-item>所有商品</button>
+          <button mat-menu-item>精選</button>
+          <button mat-menu-item>新上市</button>
+          <button mat-menu-item>禮盒</button>
+          <button mat-menu-item>優惠</button>
+        </mat-menu>
+
+        <button mat-button>聯絡我們</button>
+
+      </div>
+
+      <span class="toolbarSpacer"></span>
+
+      <button mat-icon-button [matMenuTriggerFor]="member" aria-label="Account icon">
+        <mat-icon>person_outline</mat-icon>
+      </button>
+      <mat-menu class="menu" #member="matMenu">
+        <button mat-menu-item>會員中心</button>
+        <button mat-menu-item>登出</button>
+      </mat-menu>
+      <button mat-icon-button aria-label="Shopping Cart icon">
+        <span class="material-symbols-outlined">
+          shopping_cart
+        </span>
+      </button>
+
+    </mat-toolbar>
+
+    <!-- swiper -->
+    <swiper class="swiper" [slidesPerView]="1" [spaceBetween]="50" (swiper)="onSwiper($event)"
+      (slideChange)="onSlideChange()" [navigation]="true" [pagination]="{ clickable: true }" [loop]="true"
+      [autoplay]="true" effect="fade">
+      <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-5-2.jpg" alt="Tea" width="100%"></ng-template>
+      <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-1-2.jpg" alt="Tea" width="100%"></ng-template>
+      <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-3-2.jpg" alt="Tea" width="100%"></ng-template>
+      <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-4-2.jpg" alt="Tea" width="100%"></ng-template>
+    </swiper>
+
+    <!-- First Section -->
+
+    <h3 class="headingSection">熱銷商品</h3>
+
+    <mat-grid-list cols="3">
+      <mat-grid-tile class="bestSellersImage imageHoverEffect"><img src="./assets/images/oriento-unsplash-bestSellers-1.jpg" alt="Tea" width="100%"></mat-grid-tile>
+      <mat-grid-tile class="bestSellersImage imageHoverEffect"><img src="./assets/images/oriento-unsplash-bestSellers-2.jpg" alt="Tea" width="100%"></mat-grid-tile>
+      <mat-grid-tile class="bestSellersImage imageHoverEffect"><img src="./assets/images/oriento-unsplash-bestSellers-3.jpg" alt="Tea" width="100%"></mat-grid-tile>
+    </mat-grid-list>
+
+    <h3 class="headingSection">其他商品</h3>
+
+    <mat-grid-list cols="3">
+      <mat-grid-tile class="bestSellersImage imageHoverEffect"><img src="./assets/images/oriento-unsplash-bestSellers-1.jpg" alt="Tea" width="100%"></mat-grid-tile>
+      <mat-grid-tile class="bestSellersImage imageHoverEffect"><img src="./assets/images/oriento-unsplash-bestSellers-3.jpg" alt="Tea" width="100%"></mat-grid-tile>
+      <mat-grid-tile class="bestSellersImage imageHoverEffect"><img src="./assets/images/oriento-unsplash-bestSellers-2.jpg" alt="Tea" width="100%"></mat-grid-tile>
+    </mat-grid-list>
+
+    <!-- <div class="bestSellersImages">
+      <div><img src="./assets/images/oriento-unsplash-grid-1.jpg" alt="Tea" width="100%"></div>
+      <div><img src="./assets/images/oriento-unsplash-grid-1.jpg" alt="Tea" width="100%"></div>
+      <div><img src="./assets/images/oriento-unsplash-grid-1.jpg" alt="Tea" width="100%"></div>
+    </div> -->
 
 
 
 
 
 
-
-
-
-<!-- swiper -->
-  <swiper
-    class="swiper"
-    [slidesPerView]="1" 
-    [spaceBetween]="50" 
-    (swiper)="onSwiper($event)" 
-    (slideChange)="onSlideChange()"
-    [navigation]="true" 
-    [pagination]="{ clickable: true }" 
-    [loop]="true"
-    [autoplay]="true"
-    effect="fade"
-    >
-    <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-5-2.jpg" alt="Tea" width="100%"></ng-template>
-    <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-1-2.jpg" alt="Tea" width="100%"></ng-template>
-    <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-3-2.jpg" alt="Tea" width="100%"></ng-template>
-    <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-4-2.jpg" alt="Tea" width="100%"></ng-template>
-  </swiper>
-
-</mat-drawer-container>
+  </mat-drawer-container>
 
 </div>
 
