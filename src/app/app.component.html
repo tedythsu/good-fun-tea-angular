@@ -9,42 +9,6 @@
 
 <div class="container">
 
-  <mat-drawer-container class="drawerContainer">
-    <mat-drawer #drawer class="sidenav" mode="push">
-
-      <mat-accordion>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              關於我們
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button mat-button>Basic</button>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              瀏覽商品
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button mat-button>Basic</button>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              聯絡我們
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <button mat-button>Basic</button>
-        </mat-expansion-panel>
-
-      </mat-accordion>
-
-    </mat-drawer>
-
     <!-- Small Toolbar -->
 
     <mat-toolbar class="toolbarSmall">
@@ -122,46 +86,108 @@
 
     </mat-toolbar>
 
+    <!-- Drawer -->
+
+    <mat-drawer-container class="drawerContainer">
+      <mat-drawer #drawer class="sidenav" mode="push">
+  
+        <mat-accordion>
+  
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                關於我們
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button mat-button>Basic</button>
+          </mat-expansion-panel>
+  
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                瀏覽商品
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button mat-button>Basic</button>
+          </mat-expansion-panel>
+  
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                聯絡我們
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <button mat-button>Basic</button>
+          </mat-expansion-panel>
+  
+        </mat-accordion>
+  
+      </mat-drawer>
+
     <!-- swiper -->
     <swiper class="swiper" [slidesPerView]="1" [spaceBetween]="50" (swiper)="onSwiper($event)"
       (slideChange)="onSlideChange()" [navigation]="true" [pagination]="{ clickable: true }" [loop]="true"
       [autoplay]="true" effect="fade">
-      <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-5-2.jpg" alt="Tea" width="100%"></ng-template>
-      <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-1-2.jpg" alt="Tea" width="100%"></ng-template>
-      <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-3-2.jpg" alt="Tea" width="100%"></ng-template>
-      <ng-template swiperSlide><img src="./assets/images/oriento-unsplash-4-2.jpg" alt="Tea" width="100%"></ng-template>
+      <ng-template swiperSlide><img src="./assets/images/slider_1.jpg" alt="Tea" width="100%"></ng-template>
+      <ng-template swiperSlide><img src="./assets/images/slider_2.jpg" alt="Tea" width="100%"></ng-template>
+      <ng-template swiperSlide><img src="./assets/images/slider_3.jpg" alt="Tea" width="100%"></ng-template>
+      <ng-template swiperSlide><img src="./assets/images/slider_4.jpg" alt="Tea" width="100%"></ng-template>
+      <!-- <ng-template swiperSlide><img src="https://myship.7-11.com.tw/i/cgdm/GM2205165689500/GM2205165689500_1356780.jpg" alt="Tea" width="100%"></ng-template> -->
     </swiper>
 
     <!-- First Section -->
 
-    <h3 class="headingSection">熱銷商品</h3>
+    <h1 class="headingSection">特色商品</h1>
 
-    <mat-grid-list cols="3">
-      <mat-grid-tile class="bestSellersImage imageHoverEffect"><img src="./assets/images/oriento-unsplash-bestSellers-1.jpg" alt="Tea" width="100%"></mat-grid-tile>
-      <mat-grid-tile class="bestSellersImage imageHoverEffect"><img src="./assets/images/oriento-unsplash-bestSellers-2.jpg" alt="Tea" width="100%"></mat-grid-tile>
-      <mat-grid-tile class="bestSellersImage imageHoverEffect"><img src="./assets/images/oriento-unsplash-bestSellers-3.jpg" alt="Tea" width="100%"></mat-grid-tile>
-    </mat-grid-list>
+    <div class="grid-container grid-container--fit">
+      <div class="grid-element">
+        <img class="imageHoverEffect" src="./assets/images/product_1.jpg" alt="Tea" width="100%">
+        <div>冷泡茶</div>
+      </div>
+      <div class="grid-element">
+        <img class="imageHoverEffect" src="./assets/images/product_2.jpg" alt="Tea" width="100%">
+        <div>原味黑糖磚</div>
+      </div>
+      <div class="grid-element">
+        <img class="imageHoverEffect" src="./assets/images/product_3.jpg" alt="Tea" width="100%">
+        <div>包種茶</div>
+      </div>
+      <!-- <div class="grid-element">
+        <img class="imageHoverEffect" src="./assets/images/oriento-unsplash-bestSellers-4.jpg" alt="Tea" width="100%">
+        <div>包種茶</div>
+      </div> -->
+    </div>
 
-    <h3 class="headingSection">其他商品</h3>
+    <h1 class="headingSection">關於我們</h1>
+    
+    <div class="aboutUsSection">
+      <div class="aboutUsDescription">新世代茶業文化創意品牌「古風茶創」，以販售令人安心飲用的優質好茶為根本，
+        結合新世代思維，重新詮釋茶文化的概念， 追求的，不只是純粹的茶滋味，而是將茶融入生活、帶入溫度， 品嚐每一口茶與情感的連結。</div>
+      <div class="introductionVideo"><iframe class="introductionVideoFrame" src="https://www.youtube.com/embed/hexcIWsSp-0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></div>
+    </div>
 
-    <mat-grid-list cols="3">
-      <mat-grid-tile class="bestSellersImage imageHoverEffect"><img src="./assets/images/oriento-unsplash-bestSellers-1.jpg" alt="Tea" width="100%"></mat-grid-tile>
-      <mat-grid-tile class="bestSellersImage imageHoverEffect"><img src="./assets/images/oriento-unsplash-bestSellers-3.jpg" alt="Tea" width="100%"></mat-grid-tile>
-      <mat-grid-tile class="bestSellersImage imageHoverEffect"><img src="./assets/images/oriento-unsplash-bestSellers-2.jpg" alt="Tea" width="100%"></mat-grid-tile>
-    </mat-grid-list>
+    <h1 class="headingSection">聯絡我們</h1>
+    
+  <div class="footer">
 
-    <!-- <div class="bestSellersImages">
-      <div><img src="./assets/images/oriento-unsplash-grid-1.jpg" alt="Tea" width="100%"></div>
-      <div><img src="./assets/images/oriento-unsplash-grid-1.jpg" alt="Tea" width="100%"></div>
-      <div><img src="./assets/images/oriento-unsplash-grid-1.jpg" alt="Tea" width="100%"></div>
-    </div> -->
+    <div class="fb-page"
+      data-href="https://www.facebook.com/%E5%8F%A4%E9%A2%A8%E8%8C%B6%E5%89%B5-Good-Fun-108574641279639"
+      data-tabs="timeline" data-width="" data-height="70" data-small-header="true" data-adapt-container-width="true"
+      data-hide-cover="true" data-show-facepile="false">
+      <blockquote cite="https://www.facebook.com/%E5%8F%A4%E9%A2%A8%E8%8C%B6%E5%89%B5-Good-Fun-108574641279639"
+        class="fb-xfbml-parse-ignore"><a
+          href="https://www.facebook.com/%E5%8F%A4%E9%A2%A8%E8%8C%B6%E5%89%B5-Good-Fun-108574641279639">古風茶創 Good Fun</a>
+      </blockquote>
+    </div>
+
+  </div>
 
 
+    </mat-drawer-container>
 
-
-
-
-  </mat-drawer-container>
 
 </div>
 
