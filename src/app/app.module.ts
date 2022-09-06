@@ -15,10 +15,14 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatCardModule} from '@angular/material/card';
 
 import { SwiperModule } from 'swiper/angular';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutUsComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
