@@ -1,18 +1,190 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<mat-toolbar class="toolbarSmall">
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+    <button mat-icon-button (click)="drawer.toggle()" class="menuIcon" aria-label="Icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
 
-<router-outlet></router-outlet>
+    <div class="toolbarTitle">
+    
+        <button mat-button>
+            <a class="toolbarButtonLink" routerLink="">
+                <div class="toolbarHomeButton">
+                    <img class="toolbarLogo" src="./assets/images/logo-removebg-preview.png" alt="Good Fun Tea Logo"
+                        width="40" height="40">
+                    <div>古風茶創</div>
+                </div>
+            </a>
+        </button>
+    
+    </div>
+
+    <span class="toolbarSpacer"></span>
+
+    <!-- <button mat-icon-button [matMenuTriggerFor]="member" aria-label="Account icon">
+    <mat-icon>person_outline</mat-icon>
+  </button>
+  <mat-menu class="menu" #member="matMenu">
+    <button mat-menu-item>會員中心</button>
+    <button mat-menu-item>登出</button>
+  </mat-menu>
+
+  <button mat-icon-button aria-label="Shopping Cart icon">
+    <span class="material-symbols-outlined">
+      shopping_cart
+    </span>
+  </button> -->
+
+</mat-toolbar>
+
+<!-- Large Toolbar -->
+
+<mat-toolbar class="toolbarLarge">
+
+    <button mat-button>
+        <a class="toolbarButtonLink" routerLink="">
+            <span class="toolbarTitle">
+                <img class="toolbarLogo" src="./assets/images/logo-removebg-preview.png" alt="Good Fun Tea Logo" width="40"
+                    height="40">
+                古風茶創
+            </span>
+        </a>
+    </button>
+
+    <div class="toolbarButtons">
+
+        <button mat-button>最新消息</button>
+
+        <button mat-button [matMenuTriggerFor]="aboutUs">關於我們</button>
+        <mat-menu class="menu" #aboutUs="matMenu">
+            <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item>品牌故事</button></a>
+            <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item>品牌經歷</button></a>
+            <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item>品牌理念</button></a>
+            <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item>採訪/活動照片</button></a>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="shop">瀏覽商品</button>
+        <mat-menu class="menu" #shop="matMenu">
+            <button mat-menu-item>茶包系列</button>
+            <button mat-menu-item>原片系列</button>
+            <button mat-menu-item>茶點系列</button>
+            <button mat-menu-item>茶具系列</button>
+            <button mat-menu-item>組合系列</button>
+            <button mat-menu-item>禮盒系列</button>
+        </mat-menu>
+
+        <a class="toolbarButtonLink" target="_blank" href="https://myship.7-11.com.tw/general/detail/GM2205165689500">
+            <button mat-button>線上訂購</button>
+        </a>
+
+        <button mat-button [matMenuTriggerFor]="delivery">出貨資訊</button>
+        <mat-menu class="menu" #delivery="matMenu">
+            <button mat-menu-item>出貨方式</button>
+            <button mat-menu-item>出貨天數</button>
+            <button mat-menu-item>付款方式</button>
+        </mat-menu>
+
+        <button mat-button>聯絡我們</button>
+
+    </div>
+
+    <span class="toolbarSpacer"></span>
+
+    <!-- <button mat-icon-button [matMenuTriggerFor]="member" aria-label="Account icon">
+    <mat-icon>person_outline</mat-icon>
+  </button>
+  <mat-menu class="menu" #member="matMenu">
+    <button mat-menu-item>會員中心</button>
+    <button mat-menu-item>登出</button>
+  </mat-menu>
+  <button mat-icon-button aria-label="Shopping Cart icon">
+    <span class="material-symbols-outlined">
+      shopping_cart
+    </span>
+  </button> -->
+
+</mat-toolbar>
+
+<!-- Small Toolbar Drawer -->
+
+<mat-drawer-container class="drawerContainer">
+    <mat-drawer #drawer class="sidenav" mode="push" [autoFocus]="false">
+
+        <mat-accordion>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        最新消息
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div><button mat-button>Facebook</button></div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        關於我們
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div><a class="toolbarButtonLink" routerLink="about-us"><button mat-button>品牌故事</button></a></div>
+                <div><a class="toolbarButtonLink" routerLink="about-us"><button mat-button>品牌經歷</button></a></div>
+                <div><a class="toolbarButtonLink" routerLink="about-us"><button mat-button>品牌理念</button></a></div>
+                <div><a class="toolbarButtonLink" routerLink="about-us"><button mat-button>採訪/活動照片</button></a></div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        瀏覽商品
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div><button mat-button>茶包系列</button></div>
+                <div><button mat-button>原片系列</button></div>
+                <div><button mat-button>茶點系列</button></div>
+                <div><button mat-button>茶具系列</button></div>
+                <div><button mat-button>組合系列</button></div>
+                <div><button mat-button>禮盒系列</button></div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        線上訂購
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div>
+                    <a class="toolbarButtonLink" target="_blank"
+                        href="https://myship.7-11.com.tw/general/detail/GM2205165689500">
+                        <button mat-button>7-ELEVEN 交貨便</button>
+                    </a>
+                </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        出貨資訊
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div><button mat-button>出貨方式</button></div>
+                <div><button mat-button>出貨天數</button></div>
+                <div><button mat-button>付款方式</button></div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        聯絡我們
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div><button mat-button>E-mail</button></div>
+            </mat-expansion-panel>
+
+        </mat-accordion>
+
+    </mat-drawer>
+
+    <!-- ***** router-outlet ***** -->
+    <router-outlet></router-outlet>
+
+</mat-drawer-container>
