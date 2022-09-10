@@ -154,7 +154,7 @@
         </mat-expansion-panel-header>
         <div>
           <a class="toolbarButtonLink" target="_blank" href="https://myship.7-11.com.tw/general/detail/GM2205165689500">
-            <button mat-button>7-ELEVEN 交貨便</button>
+            <button mat-button>7-ELEVEN 賣貨便</button>
           </a>
         </div>
       </mat-expansion-panel>
@@ -185,6 +185,42 @@
 
   <!-- ***** router-outlet ***** -->
   <router-outlet></router-outlet>
+
+  <!-- Footer -->
+  <div class="footer">
+
+    <div class="footerIcons">
+      <!-- Add font awesome icons -->
+      <i class="fa-solid fa-bag-shopping"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+
+    <div class="footerLinks">
+      <div class="footerAboutUs">
+        <h3>關於我們<hr></h3>
+        
+        <div>品牌故事</div>
+        <div>隱私政策</div>
+      </div>
+
+      <div class="footerShoppingGuide">
+        <h3>購物說明<hr></h3>
+        <div>服務條款</div>
+        <div>退換貨方式</div>
+      </div>
+
+      <div class="footerServiceInformation">
+        <h3>常見問題<hr></h3>
+        <div>聯絡我們</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="allRightsReserved">
+    <small>&copy; Copyright 2022, Good Fun Tea</small>
+  </div>
 
   <!-- Back to top button -->
   <div class="to-top" (click)="scrollToTop()" [ngClass]="{ 'show-scrollTop': windowScrolled }">
