@@ -1,45 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap');
 
 .toolbarSpacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 @media screen and (min-width: 577px) {
 
-    /* Display menu icon on mobile devices */
-    .smallProductGridList {
-        display: none;
-    }
+  /* Display menu icon on mobile devices */
+  .smallProductGridList {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
 
-    /* Hide menu icon on large screen */
-    .largeProductGridList  {
-        display: none;
-    }
+  /* Hide menu icon on large screen */
+  .largeProductGridList {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 993px) {
 
-    /* Display menu icon on mobile devices */
-    button.menuIcon,
-    .toolbarSmall {
-        display: none;
-    }
+  /* Display menu icon on mobile devices */
+  button.menuIcon,
+  .toolbarSmall {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 992px) {
 
-    /* Hide menu icon on large screen */
-    .toolbarButtons,
-    .toolbarLarge {
-        display: none;
-    }
+  /* Hide menu icon on large screen */
+  .toolbarButtons,
+  .toolbarLarge {
+    display: none;
+  }
 }
 
 *:not(.material-icons, .material-symbols-outlined) {
-    font-family: 'Noto Serif TC', serif;
+  font-family: 'Noto Serif TC', serif;
 }
 
 /* .toolbar {
@@ -60,134 +60,172 @@
 } */
 
 .app-toolbar {
-    position: sticky;
-    position: -webkit-sticky;
-    /* For macOS/iOS Safari */
-    top: 0;
-    /* Sets the sticky toolbar to be on top */
-    z-index: 1000;
-    /* Ensure that your app's content doesn't overlap the toolbar */
+  position: sticky;
+  position: -webkit-sticky;
+  /* For macOS/iOS Safari */
+  top: 0;
+  /* Sets the sticky toolbar to be on top */
+  z-index: 1000;
+  /* Ensure that your app's content doesn't overlap the toolbar */
 }
 
 ::ng-deep .mat-toolbar {
-    height: 56px;
+  height: 56px;
 }
 
 .toolbarButtonLink {
-    text-decoration: none;
-    color: #000000;
-    font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
 }
 
 .toolbarTitle {
-    font-family: 'Noto Serif TC', serif;
-    letter-spacing: 0.25rem;
+  font-family: 'Noto Serif TC', serif;
+  letter-spacing: 0.25rem;
 }
 
 .toolbarHomeButton {
-    display: flex;
+  display: flex;
 }
 
 .toolbarLarge .toolbarTitle {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .toolbarSmall .toolbarTitle {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
 .toolbarButtons>button {
-    font-family: 'Noto Serif TC', serif;
+  font-family: 'Noto Serif TC', serif;
 }
 
 ::ng-deep .menu .mat-menu-item {
-    font-family: 'Noto Serif TC', serif;
+  font-family: 'Noto Serif TC', serif;
 }
 
 .sidenav {
-    width: auto;
+  width: auto;
 }
 
 .swiper {
-    --swiper-theme-color: #ffffff;
-    --swiper-navigation-color: #ffffff;
-    --swiper-navigation-size: 30px;
+  --swiper-theme-color: #ffffff;
+  --swiper-navigation-color: #ffffff;
+  --swiper-navigation-size: 30px;
 }
 
 .headingSection {
-    text-align: center;
-    margin: 1em;
+  text-align: center;
+  margin: 1em;
 }
 
 .imageHoverEffect {
-    cursor: pointer;
-    opacity: 0.8;
-    transition: all 0.5s ease;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.5s ease;
 }
 
 .imageHoverEffect:hover {
-    opacity: 1;
-    transition: all 0.5s ease;
+  opacity: 1;
+  transition: all 0.5s ease;
 }
 
 .grid-container {
-    display: grid;
+  display: grid;
 }
 
 .grid-container--fit {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .grid-element {
-    /* background-color: deepPink; */
-    padding: 0 20px 20px 20px;
-    /* color: #fff; */
-    border: 1px solid #fff;
-    text-align: center;
+  /* background-color: deepPink; */
+  padding: 0 20px 20px 20px;
+  /* color: #fff; */
+  border: 1px solid #fff;
+  text-align: center;
 }
 
 .aboutUsSection {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .aboutUsDescription {
-    margin-bottom: 20px;
-    background-color: #f4f4f4;
-    padding: 3em;
+  margin-bottom: 20px;
+  background-color: #f4f4f4;
+  padding: 3em;
 }
 
 .introductionVideo {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .introductionVideoFrame {
-    width: 60vw;
-    height: calc(60vw/1.77);
-    text-align: center;
+  width: 60vw;
+  height: calc(60vw/1.77);
+  text-align: center;
 }
 
 .footer {
-    text-align: center;
+  text-align: center;
 }
 
 .drawerContainer {
-    position: absolute;
-    top: 56px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* background: #eee; */
+  position: absolute;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background: #eee; */
 }
 
 .drawerContainer button,
 .menuLink {
-    color: #000000DE;
-    text-decoration: none;
+  color: #000000DE;
+  text-decoration: none;
+}
+
+
+/* Back to top button */
+.to-top {
+  /* bottom: 0; */
+  padding: 6px 5px 0;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  /* margin: 0 8px 12px 0; */
+  position: fixed;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 100%;
+  border: 1px solid black;
+  background-color: #ffffff;
+}
+
+.to-top .material-symbols-outlined {
+  line-height: 0.25;
+  font-size: 20px;
+}
+
+.to-top-word {
+  font-size: 10px;
+}
+
+.to-top:hover {
+  opacity: 1;
+  transition: all 0.25s ease;
+}
+
+.show-scrollTop {
+  opacity: 1 !important;
+  transition: all 0.2s ease-in-out;
 }

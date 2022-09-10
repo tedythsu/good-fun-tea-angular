@@ -1,112 +1,112 @@
-<div class="container">
+<div class="container" id="pageTop">
 
-        <!-- swiper -->
-        <swiper class="swiper" [slidesPerView]="1" [spaceBetween]="50" (swiper)="onSwiper($event)"
-            (slideChange)="onSlideChange()" [navigation]="true" [pagination]="{ clickable: true }" [loop]="true"
-            [autoplay]="true" effect="fade">
-            <!-- <ng-template swiperSlide><img src="./assets/images/slider_1.jpg" alt="Tea" width="100%"></ng-template>
+  <!-- swiper -->
+  <swiper class="swiper" [slidesPerView]="1" [spaceBetween]="50" (swiper)="onSwiper($event)"
+    (slideChange)="onSlideChange()" [navigation]="true" [pagination]="{ clickable: true }" [loop]="true"
+    [autoplay]="true" effect="fade">
+    <!-- <ng-template swiperSlide><img src="./assets/images/slider_1.jpg" alt="Tea" width="100%"></ng-template>
             <ng-template swiperSlide><img src="./assets/images/slider_2.jpg" alt="Tea" width="100%"></ng-template>
             <ng-template swiperSlide><img src="./assets/images/slider_3.jpg" alt="Tea" width="100%"></ng-template>
             <ng-template swiperSlide><img src="./assets/images/slider_4.jpg" alt="Tea" width="100%"></ng-template> -->
-            <ng-template swiperSlide><img src="./assets/images/banner_1.png" alt="Tea" width="100%"></ng-template>
-            <ng-template swiperSlide><img src="./assets/images/banner_2.png" alt="Tea" width="100%"></ng-template>
-            <ng-template swiperSlide><img src="./assets/images/banner_3.png" alt="Tea" width="100%"></ng-template>
-            <!-- <ng-template swiperSlide><img src="https://myship.7-11.com.tw/i/cgdm/GM2205165689500/GM2205165689500_1356780.jpg" alt="Tea" width="100%"></ng-template> -->
-        </swiper>
+    <ng-template swiperSlide><img src="./assets/images/banner_1.png" alt="Tea" width="100%"></ng-template>
+    <ng-template swiperSlide><img src="./assets/images/banner_2.png" alt="Tea" width="100%"></ng-template>
+    <ng-template swiperSlide><img src="./assets/images/banner_3.png" alt="Tea" width="100%"></ng-template>
+    <!-- <ng-template swiperSlide><img src="https://myship.7-11.com.tw/i/cgdm/GM2205165689500/GM2205165689500_1356780.jpg" alt="Tea" width="100%"></ng-template> -->
+  </swiper>
 
-        <!-- First Section -->
+  <!-- First Section -->
 
-        <h1 class="headingSection">特色商品</h1>
+  <h1 class="headingSection">特色商品</h1>
 
-        <mat-grid-list cols="1" rowHeight="1:1" class="smallProductGridList">
-            <mat-grid-tile>
-                <figure>
-                    <img class="imageHoverEffect" src="./assets/images/product_1.jpg" alt="Tea" width="100%">
-                    <figcaption>茶包系列</figcaption>
-                </figure>
-            </mat-grid-tile>
+  <mat-grid-list cols="1" rowHeight="1:1" class="smallProductGridList">
+    <mat-grid-tile>
+      <figure>
+        <img class="imageHoverEffect" src="./assets/images/product_1.jpg" alt="Tea" width="100%">
+        <figcaption>茶包系列</figcaption>
+      </figure>
+    </mat-grid-tile>
 
-            <mat-grid-tile>
-                <figure>
-                    <img class="imageHoverEffect" src="./assets/images/product_2.jpg" alt="Tea" width="100%">
-                    <figcaption>原片系列</figcaption>
-                </figure>
-            </mat-grid-tile>
+    <mat-grid-tile>
+      <figure>
+        <img class="imageHoverEffect" src="./assets/images/product_2.jpg" alt="Tea" width="100%">
+        <figcaption>原片系列</figcaption>
+      </figure>
+    </mat-grid-tile>
 
-           <mat-grid-tile>
-                <figure>
-                    <img class="imageHoverEffect" src="./assets/images/product_3.jpg" alt="Tea" width="100%">
-                    <figcaption>茶點系列</figcaption>
-                </figure>
-            </mat-grid-tile>
+    <mat-grid-tile>
+      <figure>
+        <img class="imageHoverEffect" src="./assets/images/product_3.jpg" alt="Tea" width="100%">
+        <figcaption>茶點系列</figcaption>
+      </figure>
+    </mat-grid-tile>
 
-           <mat-grid-tile>
-                <figure>
-                    <img class="imageHoverEffect" src="./assets/images/product_4.jpg" alt="Tea" width="100%">
-                    <figcaption>茶具系列</figcaption>
-                </figure>
-            </mat-grid-tile>
+    <mat-grid-tile>
+      <figure>
+        <img class="imageHoverEffect" src="./assets/images/product_4.jpg" alt="Tea" width="100%">
+        <figcaption>茶具系列</figcaption>
+      </figure>
+    </mat-grid-tile>
 
-            <mat-grid-tile>
-                <figure>
-                    <img class="imageHoverEffect" src="./assets/images/product_5.jpg" alt="Tea" width="100%">
-                    <figcaption>組合系列</figcaption>
-                </figure>
-            </mat-grid-tile>
+    <mat-grid-tile>
+      <figure>
+        <img class="imageHoverEffect" src="./assets/images/product_5.jpg" alt="Tea" width="100%">
+        <figcaption>組合系列</figcaption>
+      </figure>
+    </mat-grid-tile>
 
-            <mat-grid-tile>
-                <figure>
-                    <img class="imageHoverEffect" src="./assets/images/product_6.jpg" alt="Tea" width="100%">
-                    <figcaption>禮盒系列</figcaption>
-                </figure>
-            </mat-grid-tile>
-        </mat-grid-list>
+    <mat-grid-tile>
+      <figure>
+        <img class="imageHoverEffect" src="./assets/images/product_6.jpg" alt="Tea" width="100%">
+        <figcaption>禮盒系列</figcaption>
+      </figure>
+    </mat-grid-tile>
+  </mat-grid-list>
 
-        <mat-grid-list cols="3" rowHeight="1:1" class="largeProductGridList">
-            <mat-grid-tile>
-                <figure>
-                    <img class="imageHoverEffect" src="./assets/images/product_1.jpg" alt="Tea" width="100%">
-                    <figcaption>茶包系列</figcaption>
-                </figure>
-            </mat-grid-tile>
+  <mat-grid-list cols="3" rowHeight="1:1" class="largeProductGridList">
+    <mat-grid-tile>
+      <figure>
+        <img class="imageHoverEffect" src="./assets/images/product_1.jpg" alt="Tea" width="100%">
+        <figcaption>茶包系列</figcaption>
+      </figure>
+    </mat-grid-tile>
 
-            <mat-grid-tile>
-                <figure>
-                    <img class="imageHoverEffect" src="./assets/images/product_2.jpg" alt="Tea" width="100%">
-                    <figcaption>原片系列</figcaption>
-                </figure>
-            </mat-grid-tile>
+    <mat-grid-tile>
+      <figure>
+        <img class="imageHoverEffect" src="./assets/images/product_2.jpg" alt="Tea" width="100%">
+        <figcaption>原片系列</figcaption>
+      </figure>
+    </mat-grid-tile>
 
-           <mat-grid-tile>
-                <figure>
-                    <img class="imageHoverEffect" src="./assets/images/product_3.jpg" alt="Tea" width="100%">
-                    <figcaption>茶點系列</figcaption>
-                </figure>
-            </mat-grid-tile>
+    <mat-grid-tile>
+      <figure>
+        <img class="imageHoverEffect" src="./assets/images/product_3.jpg" alt="Tea" width="100%">
+        <figcaption>茶點系列</figcaption>
+      </figure>
+    </mat-grid-tile>
 
-           <mat-grid-tile>
-                <figure>
-                    <img class="imageHoverEffect" src="./assets/images/product_4.jpg" alt="Tea" width="100%">
-                    <figcaption>茶具系列</figcaption>
-                </figure>
-            </mat-grid-tile>
+    <mat-grid-tile>
+      <figure>
+        <img class="imageHoverEffect" src="./assets/images/product_4.jpg" alt="Tea" width="100%">
+        <figcaption>茶具系列</figcaption>
+      </figure>
+    </mat-grid-tile>
 
-            <mat-grid-tile>
-                <figure>
-                    <img class="imageHoverEffect" src="./assets/images/product_5.jpg" alt="Tea" width="100%">
-                    <figcaption>組合系列</figcaption>
-                </figure>
-            </mat-grid-tile>
+    <mat-grid-tile>
+      <figure>
+        <img class="imageHoverEffect" src="./assets/images/product_5.jpg" alt="Tea" width="100%">
+        <figcaption>組合系列</figcaption>
+      </figure>
+    </mat-grid-tile>
 
-            <mat-grid-tile>
-                <figure>
-                    <img class="imageHoverEffect" src="./assets/images/product_6.jpg" alt="Tea" width="100%">
-                    <figcaption>禮盒系列</figcaption>
-                </figure>
-            </mat-grid-tile>
-        </mat-grid-list>
+    <mat-grid-tile>
+      <figure>
+        <img class="imageHoverEffect" src="./assets/images/product_6.jpg" alt="Tea" width="100%">
+        <figcaption>禮盒系列</figcaption>
+      </figure>
+    </mat-grid-tile>
+  </mat-grid-list>
 
-        <!-- <div class="grid-container grid-container--fit">
+  <!-- <div class="grid-container grid-container--fit">
             <div class="grid-element">
                 <img class="imageHoverEffect" src="./assets/images/product_1.jpg" alt="Tea" width="100%">
                 <div>冷泡茶</div>
@@ -119,40 +119,39 @@
                 <img class="imageHoverEffect" src="./assets/images/product_3.jpg" alt="Tea" width="100%">
                 <div>包種茶</div>
             </div> -->
-            <!-- <div class="grid-element">
+  <!-- <div class="grid-element">
         <img class="imageHoverEffect" src="./assets/images/oriento-unsplash-bestSellers-4.jpg" alt="Tea" width="100%">
         <div>包種茶</div>
       </div> -->
-        <!-- </div> -->
+  <!-- </div> -->
 
-        <h1 class="headingSection">關於我們</h1>
+  <h1 class="headingSection">關於我們</h1>
 
-        <div class="aboutUsSection">
-            <div class="aboutUsDescription">新世代茶業文化創意品牌「古風茶創」，以販售令人安心飲用的優質好茶為根本，
-                結合新世代思維，重新詮釋茶文化的概念， 追求的，不只是純粹的茶滋味，而是將茶融入生活、帶入溫度， 品嚐每一口茶與情感的連結。</div>
-            <div class="introductionVideo"><iframe class="introductionVideoFrame"
-                    src="https://www.youtube.com/embed/hexcIWsSp-0" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></div>
-        </div>
+  <div class="aboutUsSection">
+    <div class="aboutUsDescription">新世代茶業文化創意品牌「古風茶創」，以販售令人安心飲用的優質好茶為根本，
+      結合新世代思維，重新詮釋茶文化的概念， 追求的，不只是純粹的茶滋味，而是將茶融入生活、帶入溫度， 品嚐每一口茶與情感的連結。</div>
+    <div class="introductionVideo"><iframe class="introductionVideoFrame"
+        src="https://www.youtube.com/embed/hexcIWsSp-0" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe></div>
+  </div>
 
-        <h1 class="headingSection">聯絡我們</h1>
+  <h1 class="headingSection">聯絡我們</h1>
 
-        <div class="footer">
+  <div class="footer">
 
-            <div class="fb-page"
-                data-href="https://www.facebook.com/%E5%8F%A4%E9%A2%A8%E8%8C%B6%E5%89%B5-Good-Fun-108574641279639"
-                data-tabs="timeline" data-width="" data-height="70" data-small-header="true"
-                data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
-                <blockquote
-                    cite="https://www.facebook.com/%E5%8F%A4%E9%A2%A8%E8%8C%B6%E5%89%B5-Good-Fun-108574641279639"
-                    class="fb-xfbml-parse-ignore"><a
-                        href="https://www.facebook.com/%E5%8F%A4%E9%A2%A8%E8%8C%B6%E5%89%B5-Good-Fun-108574641279639">古風茶創
-                        Good Fun</a>
-                </blockquote>
-            </div>
+    <div class="fb-page"
+      data-href="https://www.facebook.com/%E5%8F%A4%E9%A2%A8%E8%8C%B6%E5%89%B5-Good-Fun-108574641279639"
+      data-tabs="timeline" data-width="" data-height="70" data-small-header="true" data-adapt-container-width="true"
+      data-hide-cover="true" data-show-facepile="false">
+      <blockquote cite="https://www.facebook.com/%E5%8F%A4%E9%A2%A8%E8%8C%B6%E5%89%B5-Good-Fun-108574641279639"
+        class="fb-xfbml-parse-ignore"><a
+          href="https://www.facebook.com/%E5%8F%A4%E9%A2%A8%E8%8C%B6%E5%89%B5-Good-Fun-108574641279639">古風茶創
+          Good Fun</a>
+      </blockquote>
+    </div>
 
-        </div>
+  </div>
 
 
 
