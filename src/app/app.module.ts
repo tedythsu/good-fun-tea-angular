@@ -13,16 +13,20 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+
 
 import { SwiperModule } from 'swiper/angular';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { IndexComponent } from './index/index.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutUsComponent,
-    IndexComponent
+    IndexComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +40,7 @@ import { IndexComponent } from './index/index.component';
     MatSidenavModule,
     MatExpansionModule,
     MatCardModule,
+    MatInputModule,
     SwiperModule
   ],
   providers: [],

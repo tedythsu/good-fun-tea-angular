@@ -52,14 +52,19 @@
 
   <div class="toolbarButtons">
 
-    <button mat-button>最新消息</button>
+    <button mat-button [matMenuTriggerFor]="news">最新消息</button>
+    <mat-menu class="menu" #news="matMenu">
+      <a class="toolbarButtonLink"><button mat-menu-item>動態公告</button></a>
+      <a class="toolbarButtonLink"><button mat-menu-item>Facebook</button></a>
+      <a class="toolbarButtonLink"><button mat-menu-item>Instagram</button></a>
+    </mat-menu>
 
     <button mat-button [matMenuTriggerFor]="aboutUs">關於我們</button>
     <mat-menu class="menu" #aboutUs="matMenu">
-      <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item>品牌故事</button></a>
-      <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item>品牌經歷</button></a>
-      <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item>品牌理念</button></a>
-      <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item>採訪/活動照片</button></a>
+      <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item (click)="drawer.close()">品牌故事</button></a>
+      <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item (click)="drawer.close()">品牌經歷</button></a>
+      <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item (click)="drawer.close()">品牌理念</button></a>
+      <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item (click)="drawer.close()">採訪/活動照片</button></a>
     </mat-menu>
 
     <button mat-button [matMenuTriggerFor]="shop">瀏覽商品</button>
@@ -72,9 +77,12 @@
       <button mat-menu-item>禮盒系列</button>
     </mat-menu>
 
-    <a class="toolbarButtonLink" target="_blank" href="https://myship.7-11.com.tw/general/detail/GM2205165689500">
-      <button mat-button>線上訂購</button>
-    </a>
+    <button mat-button [matMenuTriggerFor]="orderOnline">線上訂購</button>
+    <mat-menu class="menu" #orderOnline="matMenu">
+      <a class="toolbarButtonLink" target="_blank" href="https://myship.7-11.com.tw/general/detail/GM2205165689500">
+        <button mat-menu-item>7-ELEVEN 賣貨便</button>
+      </a>
+    </mat-menu>
 
     <button mat-button [matMenuTriggerFor]="delivery">出貨資訊</button>
     <mat-menu class="menu" #delivery="matMenu">
@@ -83,7 +91,10 @@
       <button mat-menu-item>付款方式</button>
     </mat-menu>
 
-    <button mat-button>聯絡我們</button>
+    <a class="toolbarButtonLink" routerLink="contact-us"><button mat-button>聯絡我們</button></a>
+    <!-- <mat-menu class="menu" #contactUs="matMenu">
+      <a class="toolbarButtonLink" routerLink="contact-us"><button mat-menu-item>電子信箱</button></a>
+    </mat-menu> -->
 
   </div>
 
@@ -117,7 +128,9 @@
             最新消息
           </mat-panel-title>
         </mat-expansion-panel-header>
+        <div><button mat-button>動態公告</button></div>
         <div><button mat-button>Facebook</button></div>
+        <div><button mat-button>Instagram</button></div>
       </mat-expansion-panel>
 
       <mat-expansion-panel>
@@ -126,10 +139,10 @@
             關於我們
           </mat-panel-title>
         </mat-expansion-panel-header>
-        <div><a class="toolbarButtonLink" routerLink="about-us"><button mat-button>品牌故事</button></a></div>
-        <div><a class="toolbarButtonLink" routerLink="about-us"><button mat-button>品牌經歷</button></a></div>
-        <div><a class="toolbarButtonLink" routerLink="about-us"><button mat-button>品牌理念</button></a></div>
-        <div><a class="toolbarButtonLink" routerLink="about-us"><button mat-button>採訪/活動照片</button></a></div>
+        <div><a class="toolbarButtonLink" routerLink="about-us"><button mat-button (click)="drawer.close()">品牌故事</button></a></div>
+        <div><a class="toolbarButtonLink" routerLink="about-us"><button mat-button (click)="drawer.close()">品牌經歷</button></a></div>
+        <div><a class="toolbarButtonLink" routerLink="about-us"><button mat-button (click)="drawer.close()">品牌理念</button></a></div>
+        <div><a class="toolbarButtonLink" routerLink="about-us"><button mat-button (click)="drawer.close()">採訪/活動照片</button></a></div>
       </mat-expansion-panel>
 
       <mat-expansion-panel>
@@ -154,7 +167,7 @@
         </mat-expansion-panel-header>
         <div>
           <a class="toolbarButtonLink" target="_blank" href="https://myship.7-11.com.tw/general/detail/GM2205165689500">
-            <button mat-button>7-ELEVEN 賣貨便</button>
+            <button mat-button (click)="drawer.close()">7-ELEVEN 賣貨便</button>
           </a>
         </div>
       </mat-expansion-panel>
@@ -170,14 +183,16 @@
         <div><button mat-button>付款方式</button></div>
       </mat-expansion-panel>
 
-      <mat-expansion-panel>
+      <!-- <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
             聯絡我們
           </mat-panel-title>
         </mat-expansion-panel-header>
         <div><button mat-button>E-mail</button></div>
-      </mat-expansion-panel>
+      </mat-expansion-panel> -->
+
+      <a class="toolbarButtonLink" routerLink="contact-us"><button mat-raised-button class="menuButton" (click)="drawer.close()">聯絡我們</button></a>
 
     </mat-accordion>
 
@@ -212,7 +227,7 @@
 
       <div class="footerServiceInformation">
         <h3>常見問題<hr></h3>
-        <div>聯絡我們</div>
+        <div><a routerLink="contact-us">聯絡我們</a></div>
       </div>
     </div>
 

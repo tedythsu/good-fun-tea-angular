@@ -1,0 +1,23 @@
+.container {
+  padding: 20px;
+}
+
+.contactUsHeader {
+  margin-bottom: 20px;
+}
+
+.requiredNotice {
+  margin: 20px 0;
+  color: #767676;
+}
+
+.contactUsHeader,
+.form {
+  text-align: center;
+}
+
+.formField {
+  width: 75vw;
+  max-width: 500px;
+}
+

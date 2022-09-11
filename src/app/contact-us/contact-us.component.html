@@ -1,0 +1,53 @@
+<div class="container" id="pageTop">
+
+    <div class="contactUsHeader">
+        <h1>有任何問題歡迎您與我們聯繫！</h1>
+        <div>填寫以下表格，我們將在工作週期間的48小時內郵件回覆</div>
+        <div class="requiredNotice">*必填</div>
+    </div>
+
+    <form class="form" target="_blank" action="https://formsubmit.co/yardan.xii@gmail.com" method="POST">
+
+        <div class="form-group">
+            <div class="form-row">
+                <div>
+                    <mat-form-field class="formField" appearance="fill">
+                        <mat-label>您的姓名</mat-label>
+                        <input matInput type="text" name="name" class="form-control" placeholder="Full Name" required>
+                    </mat-form-field>
+
+                    <!-- <input type="text" name="name" class="form-control" placeholder="Full Name" required> -->
+                </div>
+
+                <div>
+                    <mat-form-field class="formField" appearance="fill">
+                        <mat-label>電子信箱</mat-label>
+                        <input matInput type="email" name="email" class="form-control" placeholder="Email Address"
+                            required>
+                    </mat-form-field>
+
+                    <!-- <input type="email" name="email" class="form-control" placeholder="Email Address" required> -->
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+
+            <div>
+                <mat-form-field class="formField" appearance="fill">
+                    <mat-label>您的訊息</mat-label>
+                    <textarea matInput placeholder="Your Message" class="form-control" name="message"
+                        required></textarea>
+                </mat-form-field>
+            </div>
+
+            <!-- <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea> -->
+        </div>
+
+        <button mat-raised-button type="submit">送出</button>
+
+
+        <!-- <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button> -->
+
+
+    </form>
+</div>

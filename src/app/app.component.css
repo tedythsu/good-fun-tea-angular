@@ -79,6 +79,11 @@
   font-size: 20px;
 }
 
+.footerLinks a {
+  color: #000000;
+  text-decoration: none;
+}
+
 .toolbarTitle {
   font-family: 'Noto Serif TC', serif;
   letter-spacing: 0.25rem;
@@ -111,6 +116,14 @@
 
 .sidenav {
   width: auto;
+}
+
+.sidenav .menuButton {
+  width: 100%;
+  text-align: start;
+  padding-left: 24px;
+  height: 48px;
+  font-size: 15px;
 }
 
 .swiper {
