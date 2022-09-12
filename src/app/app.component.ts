@@ -21,11 +21,10 @@ export class AppComponent {
 
   scrollToTop(): void {
 
-
-    console.log('click')
-    console.log(this.windowScrolled)
-    console.log('pageYoffset: ' + window.pageYOffset)
-    console.log('innerHeight: ' + window.innerHeight)
+    // console.log('click')
+    // console.log(this.windowScrolled)
+    // console.log('pageYoffset: ' + window.pageYOffset)
+    // console.log('innerHeight: ' + window.innerHeight)
 
     document.getElementById('pageTop')?.scrollIntoView({ behavior: 'smooth' });
 
