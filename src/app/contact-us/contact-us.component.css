@@ -21,3 +21,41 @@
   max-width: 500px;
 }
 
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  margin: auto;
+  margin-bottom: 50px;
+  max-width: 75vw;
+}
+
+.mainContent>div {
+  /* border: 1px solid black; */
+  margin: 5px;
+  padding: 15px;
+  flex: 1;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  cursor: pointer;
+  top: 0;
+  position: relative;
+  transition: all 0.5s ease;
+  min-width: 250px;
+}
+
+.mainContent>div:hover {
+  top: -5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: all 0.5s ease;
+}
+
+.sectionHeader {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.sectionContent {
+  color: #666;
+  font-size: 12px;
+}
