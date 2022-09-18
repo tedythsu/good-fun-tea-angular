@@ -42,23 +42,6 @@
   font-family: 'Noto Serif TC', serif;
 }
 
-/* .toolbar {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  z-index: 1000;
-} */
-
-/* .toolbarSmall, .toolbarLarge {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-} */
-
 .app-toolbar {
   position: sticky;
   position: -webkit-sticky;
@@ -124,66 +107,6 @@
   padding-left: 24px;
   height: 48px;
   font-size: 15px;
-}
-
-.swiper {
-  --swiper-theme-color: #ffffff;
-  --swiper-navigation-color: #ffffff;
-  --swiper-navigation-size: 30px;
-}
-
-.headingSection {
-  text-align: center;
-  margin: 1em;
-}
-
-.imageHoverEffect {
-  cursor: pointer;
-  opacity: 0.8;
-  transition: all 0.5s ease;
-}
-
-.imageHoverEffect:hover {
-  opacity: 1;
-  transition: all 0.5s ease;
-}
-
-.grid-container {
-  display: grid;
-}
-
-.grid-container--fit {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.grid-element {
-  /* background-color: deepPink; */
-  padding: 0 20px 20px 20px;
-  /* color: #fff; */
-  border: 1px solid #fff;
-  text-align: center;
-}
-
-.aboutUsSection {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.aboutUsDescription {
-  margin-bottom: 20px;
-  background-color: #f4f4f4;
-  padding: 3em;
-}
-
-/* .introductionVideo {
-  text-align: center;
-  margin-bottom: 20px;
-} */
-
-.introductionVideoFrame {
-  width: 60vw;
-  height: calc(60vw/1.77);
-  text-align: center;
 }
 
 .footer {

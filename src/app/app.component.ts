@@ -9,14 +9,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'GoodFunTea';
 
-  windowScrolled = false;
+  // windowScrolled = false;
 
   ngOnInit() {
-
-    window.addEventListener('scroll', () => {
-      this.windowScrolled = window.pageYOffset !== 0;
-      // console.log(window.pageYOffset)
-    }, true);
+    // window.addEventListener('scroll', () => {
+    //   this.windowScrolled = window.pageYOffset !== 0;
+    // }, true);
   }
 
   scrollToTop(): void {
