@@ -21,10 +21,9 @@
   }
 }
 
-*:not(.material-icons, .material-symbols-outlined) {
+/* *:not(.material-icons, .material-symbols-outlined) {
   font-family: 'Noto Serif TC', serif;
-}
-
+} */
 
 .swiper {
   --swiper-theme-color: #ffffff;
@@ -34,7 +33,9 @@
 
 .headingSection {
   text-align: center;
-  margin: 1em;
+  margin: 20px auto;
+  font: 400 30px/32px 'Noto Serif TC', serif;
+  color: #747474;
 }
 
 .imageHoverEffect {

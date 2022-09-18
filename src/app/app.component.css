@@ -38,9 +38,9 @@
   }
 }
 
-*:not(.material-icons, .material-symbols-outlined, i, .fa) {
+/* *:not(.material-icons, .material-symbols-outlined, i, .fa) {
   font-family: 'Noto Serif TC', serif;
-}
+} */
 
 .app-toolbar {
   position: sticky;
@@ -54,6 +54,7 @@
 
 ::ng-deep .mat-toolbar {
   height: 56px;
+  border-bottom: 1px solid #c8c8c9;
 }
 
 .toolbarButtonLink {
@@ -67,7 +68,7 @@
   text-decoration: none;
 } */
 
-.toolbarTitle {
+.toolbarTitle, .toolbarHomeButton>div {
   font-family: 'Noto Serif TC', serif;
   letter-spacing: 0.25rem;
 }
@@ -90,12 +91,12 @@
 }
 
 .toolbarButtons>button {
-  font-family: 'Noto Serif TC', serif;
+  /* font-family: 'Noto Serif TC', serif; */
 }
 
-::ng-deep .menu .mat-menu-item {
+/* ::ng-deep .menu .mat-menu-item {
   font-family: 'Noto Serif TC', serif;
-}
+} */
 
 .sidenav {
   width: auto;
