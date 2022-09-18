@@ -78,7 +78,7 @@
         <button mat-menu-item>7-ELEVEN 賣貨便</button>
       </a>
     </mat-menu>
-    <button mat-button [matMenuTriggerFor]="delivery">出貨資訊</button>
+    <button mat-button [matMenuTriggerFor]="delivery">購物說明</button>
     <mat-menu class="menu" #delivery="matMenu">
       <button mat-menu-item>出貨方式</button>
       <button mat-menu-item>出貨天數</button>
@@ -166,7 +166,7 @@
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            出貨資訊
+            購物說明
           </mat-panel-title>
         </mat-expansion-panel-header>
         <div><button mat-button>出貨方式</button></div>
@@ -181,51 +181,12 @@
   </mat-drawer>
 
   <!-- router-outlet -->
-  <router-outlet (activate)="scrollToTop()"></router-outlet>
+  <router-outlet (activate)="onActivate()"></router-outlet>
 
   <!-- Footer -->
-  <div class="footer">
-    <div class="footerIcons">
-      <!-- Add font awesome icons -->
-      <i class="fa-solid fa-bag-shopping"></i>
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-instagram"></i>
-    </div>
-    <div class="footerLinks">
-      <div class="footerAboutUs">
-        <h3>關於我們
-          <hr>
-        </h3>
-        <div>品牌故事</div>
-        <div>隱私政策</div>
-      </div>
-      <div class="footerShoppingGuide">
-        <h3>購物說明
-          <hr>
-        </h3>
-        <div>服務條款</div>
-        <div>退換貨方式</div>
-      </div>
-      <div class="footerServiceInformation">
-        <h3>常見問題
-          <hr>
-        </h3>
-        <div><a routerLink="contact-us">聯絡我們</a></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="allRightsReserved">
-    <small>&copy; Copyright 2022, Good Fun Tea</small>
-  </div>
+  <app-footer></app-footer>
 
   <!-- Back to top button -->
-  <!-- <div class="to-top" (click)="scrollToTop()" [ngClass]="{ 'show-scrollTop': windowScrolled }"> -->
-    <div class="to-top" (click)="scrollToTop()">
-    <span class="material-symbols-outlined">
-      expand_less
-    </span>
-    <div class="to-top-word">TOP</div>
-  </div>
+  <app-back-to-top></app-back-to-top>
 
 </mat-drawer-container>

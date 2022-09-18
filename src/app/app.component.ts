@@ -17,14 +17,17 @@ export class AppComponent {
     // }, true);
   }
 
-  scrollToTop(): void {
+  onActivate() {
+    // window.scroll(0,0);
 
-    // console.log('click')
-    // console.log(this.windowScrolled)
-    // console.log('pageYoffset: ' + window.pageYOffset)
-    // console.log('innerHeight: ' + window.innerHeight)
-
-    document.getElementById('pageTop')?.scrollIntoView({ behavior: 'smooth' });
+    // window.scroll({
+    //   top: 0,
+    //   left: 0,
+    //   behavior: 'smooth'
+    // });
+    document.body.scrollTop = 0;
+    //or document.querySelector('body').scrollTo(0,0)
 
   }
+
 }

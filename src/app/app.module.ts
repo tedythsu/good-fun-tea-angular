@@ -20,13 +20,17 @@ import { SwiperModule } from 'swiper/angular';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { IndexComponent } from './index/index.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FooterComponent } from './footer/footer.component';
+import { BackToTopComponent } from './back-to-top/back-to-top.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutUsComponent,
     IndexComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    FooterComponent,
+    BackToTopComponent
   ],
   imports: [
     BrowserModule,
