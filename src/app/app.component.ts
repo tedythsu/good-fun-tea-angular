@@ -28,7 +28,7 @@ export class AppComponent {
     // document.body.scrollTop = 0;
     //or document.querySelector('body').scrollTo(0,0)
 
-    document.getElementById('pageTop')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('pageTop')?.scrollIntoView(true);
 
   }
 
