@@ -25,8 +25,10 @@ export class AppComponent {
     //   left: 0,
     //   behavior: 'smooth'
     // });
-    document.body.scrollTop = 0;
+    // document.body.scrollTop = 0;
     //or document.querySelector('body').scrollTo(0,0)
+
+    document.getElementById('pageTop')?.scrollIntoView({ behavior: 'smooth' });
 
   }
 
