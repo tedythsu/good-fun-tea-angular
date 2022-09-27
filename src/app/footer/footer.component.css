@@ -14,12 +14,26 @@
   }
   
   .footerIcons {
-    display: grid;
+    /* display: grid; */
     margin: auto;
     margin-bottom: 20px;
     /* max-width: 20vw; */
     max-width: 100px;
-    grid-auto-flow: column;
+    /* grid-auto-flow: column; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footerIcons>a {
+    color: #000000;
+    opacity: 1;
+    transition: all 0.25s ease;
+  }
+
+  .footerIcons>a:hover {
+    opacity: 0.5;
+    transition: all 0.25s ease;
   }
   
   .footerLinks {

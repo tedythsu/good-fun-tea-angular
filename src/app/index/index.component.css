@@ -42,14 +42,29 @@
   background-color: black;
   border-radius: 4px;
   padding: 8px;
+  opacity: 0.25;
+  transition: all 0.25s ease;
+}
+
+::ng-deep .swiper-button-prev:hover, ::ng-deep .swiper-button-next:hover {
   opacity: 0.5;
+  transition: all 0.25s ease;
 }
 
 .headingSection {
+  font-family: 'Noto Serif TC', serif;
   text-align: center;
   margin: 20px auto;
-  font: 400 30px/32px 'Noto Serif TC', serif;
-  color: #747474;
+  font-size: 2rem;
+  /* color: #747474; */
+  letter-spacing: 0.5rem;
+}
+
+.contentSection {
+  font-family: 'Noto Serif TC', serif;
+  text-align: center;
+  color: #876116;
+  letter-spacing: 0.2rem;
 }
 
 .imageHoverEffect {
