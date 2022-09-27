@@ -2,8 +2,8 @@
 
   <!-- swiper -->
   <swiper class="swiper" [slidesPerView]="1" [spaceBetween]="50" (swiper)="onSwiper($event)"
-    (slideChange)="onSlideChange()" [navigation]="true" [pagination]="{ clickable: true }" [loop]="true"
-    [autoplay]="true" effect="fade">
+    (slideChange)="onSlideChange()" [navigation]="true" [pagination]="{ type: 'progressbar' }" [loop]="true"
+    [autoplay]="true" [autoplay]="{ disableOnInteraction: false }" effect="fade">
     <ng-template swiperSlide><img src="./assets/images/banner_1.png" alt="Tea" width="100%"></ng-template>
     <ng-template swiperSlide><img src="./assets/images/banner_2.png" alt="Tea" width="100%"></ng-template>
     <ng-template swiperSlide><img src="./assets/images/banner_3.png" alt="Tea" width="100%"></ng-template>

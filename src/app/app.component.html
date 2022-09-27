@@ -46,13 +46,19 @@
     </a>
   </button>
   <div class="toolbarButtons">
-    <button mat-button [matMenuTriggerFor]="news">最新消息</button>
+    <button mat-button [matMenuTriggerFor]="news">
+      最新消息
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_drop_down"></mat-icon>
+    </button>
     <mat-menu class="menu" #news="matMenu">
       <a class="toolbarButtonLink"><button mat-menu-item>動態公告</button></a>
       <a class="toolbarButtonLink"><button mat-menu-item>Facebook</button></a>
       <a class="toolbarButtonLink"><button mat-menu-item>Instagram</button></a>
     </mat-menu>
-    <button mat-button [matMenuTriggerFor]="aboutUs">關於我們</button>
+    <button mat-button [matMenuTriggerFor]="aboutUs">
+      關於我們
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_drop_down"></mat-icon>
+    </button>
     <mat-menu class="menu" #aboutUs="matMenu">
       <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item
           (click)="drawer.close()">品牌故事</button></a>
@@ -63,7 +69,10 @@
       <a class="toolbarButtonLink" routerLink="about-us"><button mat-menu-item
           (click)="drawer.close()">採訪/活動照片</button></a>
     </mat-menu>
-    <button mat-button [matMenuTriggerFor]="shop">瀏覽商品</button>
+    <button mat-button [matMenuTriggerFor]="shop">
+      瀏覽商品
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_drop_down"></mat-icon>
+    </button>
     <mat-menu class="menu" #shop="matMenu">
       <button mat-menu-item>茶包系列</button>
       <button mat-menu-item>原片系列</button>
@@ -72,13 +81,19 @@
       <button mat-menu-item>組合系列</button>
       <button mat-menu-item>禮盒系列</button>
     </mat-menu>
-    <button mat-button [matMenuTriggerFor]="orderOnline">線上訂購</button>
+    <button mat-button [matMenuTriggerFor]="orderOnline">
+      線上訂購
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_drop_down"></mat-icon>
+    </button>
     <mat-menu class="menu" #orderOnline="matMenu">
       <a class="toolbarButtonLink" target="_blank" href="https://myship.7-11.com.tw/general/detail/GM2205165689500">
         <button mat-menu-item>7-ELEVEN 賣貨便</button>
       </a>
     </mat-menu>
-    <button mat-button [matMenuTriggerFor]="delivery">購物說明</button>
+    <button mat-button [matMenuTriggerFor]="delivery">
+      購物說明
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_drop_down"></mat-icon>
+    </button>
     <mat-menu class="menu" #delivery="matMenu">
       <button mat-menu-item>出貨方式</button>
       <button mat-menu-item>出貨天數</button>

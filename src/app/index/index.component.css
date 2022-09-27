@@ -11,6 +11,9 @@
   .smallProductGridList {
     display: none;
   }
+  .swiper {
+    --swiper-navigation-size: 25px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -19,6 +22,10 @@
   .largeProductGridList {
     display: none;
   }
+  .swiper {
+    --swiper-navigation-size: 10px;
+  }
+
 }
 
 /* *:not(.material-icons, .material-symbols-outlined) {
@@ -28,7 +35,14 @@
 .swiper {
   --swiper-theme-color: #ffffff;
   --swiper-navigation-color: #ffffff;
-  --swiper-navigation-size: 30px;
+  --swiper-pagination-color: #F2AC0E;
+}
+
+::ng-deep .swiper-button-prev, ::ng-deep .swiper-button-next {
+  background-color: black;
+  border-radius: 4px;
+  padding: 8px;
+  opacity: 0.5;
 }
 
 .headingSection {
