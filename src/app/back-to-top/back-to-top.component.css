@@ -26,15 +26,16 @@
 .to-top {
   cursor: pointer;
   position: fixed;
-  opacity: 0.3;
+  opacity: 0.5;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 100%;
-  border: 3px solid #747474;
+  /* border: 3px solid #747474; */
   color: #747474;
   background-color: #ffffff;
   transition: all 0.25s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .to-top:hover {

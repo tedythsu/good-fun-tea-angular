@@ -5,7 +5,8 @@
   } */
 
 .footer {
-    background-color: #FFEEDD;
+    background-color: #F0F0F0;
+    margin-top: 20px;
     padding: 20px;
     /* display: flex;
     justify-content: center; */
@@ -18,11 +19,12 @@
     margin: auto;
     margin-bottom: 20px;
     /* max-width: 20vw; */
-    max-width: 100px;
+    max-width: 200px;
     /* grid-auto-flow: column; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #595757;
   }
 
   .footerIcons>a {
@@ -58,4 +60,8 @@
   .footerLinks a {
     color: #000000;
     text-decoration: none;
+  }
+
+  .footerLinks h3 {
+    font-weight: 600;
   }
